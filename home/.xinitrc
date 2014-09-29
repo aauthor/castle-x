@@ -15,5 +15,6 @@ xrdb -merge ~/.Xresources
 setxkbmap -option caps:swapescape
 xscreensaver -no-splash &
 xss-lock -- xscreensaver-command -lock &
+VBoxClient-all
 
-exec awesome
+exec awesome --no-argb
