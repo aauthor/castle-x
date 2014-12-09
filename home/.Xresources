@@ -1,6 +1,6 @@
 URxvt*background:           #000000
 URxvt*foreground:           #DDDDDD
-URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
+URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select,font-size
 URxvt.url-select.launcher:  firefox
 URxvt.url-select.underline: true
 URxvt.keysym.M-u:           perl:url-select:select_next
@@ -9,8 +9,17 @@ URxvt.keysym.M-s:           perl:keyboard-select:searc
 URxvt.keysym.M-c:           perl:clipboard:copy
 URxvt.keysym.M-v:           perl:clipboard:paste
 URxvt.keysym.M-C-v:         perl:clipboard:paste_escaped
+URxvt.keysym.C-Up:     perl:font-size:increase
+URxvt.keysym.C-Down:   perl:font-size:decrease
+URxvt.keysym.C-S-Up:   perl:font-size:incglobal
+URxvt.keysym.C-S-Down: perl:font-size:decglobal
+URxvt.iso14755: false
+URxvt.iso14755_52: false
 URxvt.scrollBar:            false
-URxvt.font:                 7x13
+URxvt.font:                 9x15
+URxvt*scrollTtyOutput:      false
+URxvt*scrollWithBuffer:     true
+URxvt*scrollTtyKeypress:    false
 xscreensaver.mode:          blank
 
 *color0:  #2E3436
