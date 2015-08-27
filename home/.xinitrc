@@ -13,5 +13,9 @@ fi
 
 xrdb -merge ~/.Xresources
 xmodmap .Xmodmaprc
+# dual monitor
+xrandr --output LVDS --auto
+xrandr --output HDMI-0 --auto --right-of LVDS
+xrandr --output VGA-0 --auto --right-of LVDS
 
 exec awesome --no-argb
