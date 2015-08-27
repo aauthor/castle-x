@@ -13,6 +13,5 @@ fi
 
 xrdb -merge ~/.Xresources
 xmodmap .Xmodmaprc
-VBoxClient-all
 
 exec awesome --no-argb
