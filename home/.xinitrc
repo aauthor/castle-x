@@ -13,6 +13,8 @@ fi
 
 xrdb -merge ~/.Xresources
 xmodmap .Xmodmaprc
+xset r rate 200 25
+
 # dual monitor
 xrandr --output LVDS --auto
 xrandr --output HDMI-0 --auto --right-of LVDS
